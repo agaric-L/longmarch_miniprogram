@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="title">云上长征</view>
+  <view>在地图上探索长征路线，按时间线回顾历史节点。</view>
+  <button class="button-primary" type="primary" bindtap="goMap">进入地图</button>
+  <button style="margin-top:8px;" bindtap="goTimeline">查看时间线</button>
+</view> 
