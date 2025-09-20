@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/chapters/chapters",
+    "pages/timeline/timeline",
+    "pages/challenge/challenge",
+    "pages/scene/scene",
+    "pages/scene_rj/scene_rj"
+  ],
+  "window": {
+    "navigationBarTitleText": "云上长征",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "cloud": true
+}
