@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/chapters/chapters",
+    "pages/profile/profile",
+    "pages/scene/scene",
+    "pages/scene_rj/scene_rj",
+    "pages/timeline/timeline",
+    "pages/challenge/challenge"
+  ],
+  "window": {
+    "navigationBarTitleText": "云上长征",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "长征地图"
+      },
+      {
+        "pagePath": "pages/chapters/chapters",
+        "text": "章节"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "cloud": true
+}

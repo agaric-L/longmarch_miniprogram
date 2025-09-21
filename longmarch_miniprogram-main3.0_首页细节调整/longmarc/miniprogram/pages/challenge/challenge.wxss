@@ -1,0 +1,2 @@
+.title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.desc { color: #666; margin: 8px 0 12px; } 

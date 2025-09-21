@@ -1,0 +1,18 @@
+<view class="container">
+  <!-- 背景图片 -->
+  <image class="background-image" src="../../images/首页.jpg" mode="aspectFill"></image>
+  
+  <!-- 圆圈兑换按钮 -->
+  <view class="exchange-circle">
+    <button 
+      class="circle-btn" 
+      bindtap="exchangeSteps"
+    >
+      <view class="btn-content">
+        <text class="btn-title">今日步数</text>
+        <text class="btn-steps">{{wechatSteps}}步</text>
+        <text class="btn-action">去兑换 ></text>
+      </view>
+    </button>
+  </view>
+</view>

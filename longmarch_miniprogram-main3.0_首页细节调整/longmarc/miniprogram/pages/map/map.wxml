@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 步数进度栏 -->
+  <view class="progress-bar">
+    <view class="progress-container">
+      <view class="progress-track">
+        <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+        <image class="user-avatar" src="/images/user-avatar.png" style="left: {{progressPercent}}%"></image>
+      </view>
+      <view class="destination-labels">
+        <view class="destination-label">{{currentLocation}}</view>
+        <view class="destination-label">{{nextDestination}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 地图 -->
+  <map
+    id="map"
+    style="width: 100%; height: calc(100vh - 140px);"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    scale="{{scale}}"
+    markers="{{markers}}"
+    polyline="{{polyline}}"
+    enable-3D="true"
+    enable-satellite="{{satellite}}"
+    show-location="true"
+    bindmarkertap="onMarkerTap"
+  />
+
+  <!-- 底部统计栏 -->
+  <view class="stats-bar">
+    <view class="stat-item">
+      <text class="stat-number">{{todaySteps}}</text>
+      <text class="stat-label">今日步数</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{todayDistance}}km</text>
+      <text class="stat-label">今日行走</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{totalDistance}}km</text>
+      <text class="stat-label">累计行走</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{currentLocation}}</text>
+      <text class="stat-label">当前抵达</text>
+    </view>
+  </view>
+
+  <!-- 功能按钮 -->
+  <view class="fab-group">
+    <button class="fab" size="mini" bindtap="toggleSatellite">
+      {{satellite ? '标准' : '卫星'}}
+    </button>
+  </view>
+</view>

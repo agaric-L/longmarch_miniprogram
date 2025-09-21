@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title">步数兑换长征里程</view>
+  <view class="desc">授权获取微信步数，按比例兑换为长征里程，解锁打卡。</view>
+  <button type="primary" open-type="getWeRunData" bindgetwe-run-data="onGetWeRun">获取我的步数</button>
+  <block wx:if="{{hasData}}">
+    <view style="margin-top:12px;">
+      <view>今日步数：{{todaySteps}}</view>
+      <view style="margin-top:4px;">可兑换里程：{{mileage}} 公里</view>
+      <button style="margin-top:8px;" type="primary" size="mini" bindtap="applyMileage">兑换并前进</button>
+    </view>
+  </block>
+  <view style="margin-top:16px;color:#666;font-size:12px;">兑换规则：1000 步 ≈ 0.6 公里（可在后续设置中调整比例）</view>
+</view> 
